@@ -16,6 +16,13 @@ public class tresenraya {
         String jugador1 = scanner.nextLine();
         System.out.println("Ingrese el nombre del Jugador 2: ");
         String jugador2 = scanner.nextLine();
+        
+        
+     // Decidir aleatoriamente quién empieza
+        String turnoJugador = random.nextBoolean() ? jugador1 : jugador2;
+        char turno = 'X'; // Empieza con la x
+
+        System.out.println("Tiro la moneda y " + turnoJugador + " empieza primero!");
 	}
 
 }

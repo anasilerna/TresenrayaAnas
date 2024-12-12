@@ -74,6 +74,11 @@ public class tresenraya {
                 System.out.println("Casilla ocupada. Intenta de nuevo.");
                 continue; // Si la casilla está ocupada, se solicita de nuevo
             }
+            
+            // Marcar la casilla con el símbolo del jugador
+            tablero[fila][columna] = turno;
+            movimientos++;
+
 
 	}
 

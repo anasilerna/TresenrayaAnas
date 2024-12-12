@@ -81,6 +81,32 @@ public class tresenraya {
             
             // Verificar si hay un ganador en filas, columnas o diagonales
             ganador = false;
+            
+            // Comprobar filas
+            for (int i = 0; i < 3; i++) {
+                if (tablero[i][0] == tablero[i][1] && tablero[i][1] == tablero[i][2] && tablero[i][0] != ' ') {
+                    ganador = true; // Ganador en fila
+                    break;
+                }
+            }
+
+            // Comprobar columnas
+            for (int i = 0; i < 3; i++) {
+                if (tablero[0][i] == tablero[1][i] && tablero[1][i] == tablero[2][i] && tablero[0][i] != ' ') {
+                    ganador = true; // Ganador en columna
+                    break;
+                }
+            }
+
+            // Verificar las diagonales
+            if (tablero[0][0] == tablero[1][1] && tablero[1][1] == tablero[2][2] && tablero[0][0] != ' ') {
+                ganador = true; // Ganador en la diagonal principal
+            }
+
+            if (tablero[0][2] == tablero[1][1] && tablero[1][1] == tablero[2][0] && tablero[0][2] != ' ') {
+                ganador = true; // Ganador en la diagonal secundaria
+            }
+
 
 
 

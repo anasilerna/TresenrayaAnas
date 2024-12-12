@@ -49,6 +49,12 @@ public class tresenraya {
          // Solicitar al jugador que elija una casilla (1-9)
             System.out.println("Turno de " + turnoJugador + " (" + turno + "). Elige una casilla (1-9): ");
             int casilla = scanner.nextInt();
+            
+            // Validar que la casilla esté entre 1 y 9
+            if (casilla < 1 || casilla > 9) {
+                System.out.println("Casilla no válida. Intenta de nuevo.");
+                continue;
+            }
 	}
 
 }

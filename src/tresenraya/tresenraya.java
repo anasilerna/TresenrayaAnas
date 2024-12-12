@@ -55,6 +55,20 @@ public class tresenraya {
                 System.out.println("Casilla no válida. Intenta de nuevo.");
                 continue;
             }
+         // Convertir la casilla (1-9) a la posición fila y columna
+            int fila = 0, columna = 0;
+
+            // Condicional para convertir la casilla a fila y columna
+            if (casilla >= 1 && casilla <= 3) {
+                fila = 0;  // Fila 0
+                columna = casilla - 1;  // Columna 0, 1 o 2
+            } else if (casilla >= 4 && casilla <= 6) {
+                fila = 1;  // Fila 1
+                columna = casilla - 4;  // Columna 0, 1 o 2
+            } else if (casilla >= 7 && casilla <= 9) {
+                fila = 2;  // Fila 2
+                columna = casilla - 7;  // Columna 0, 1 o 2
+            }
 	}
 
 }

@@ -23,6 +23,17 @@ public class tresenraya {
         char turno = 'X'; // Empieza con la x
 
         System.out.println("Tiro la moneda y " + turnoJugador + " empieza primero!");
+        
+        
+        // Inicio del tablero vacío
+        char[][] tablero = {
+            {' ', ' ', ' '},
+            {' ', ' ', ' '},
+            {' ', ' ', ' '}
+        };
+
+        boolean ganador = false; // Variable para verificar si ya hay un ganador
+        int movimientos = 0; // Contador de movimientos 
 	}
 
 }

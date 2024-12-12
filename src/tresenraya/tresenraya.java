@@ -9,7 +9,13 @@ public class tresenraya {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-
+        
+        
+     // Scanner para preguntar nombres de los jugadores
+        System.out.println("Ingrese el nombre del Jugador 1: ");
+        String jugador1 = scanner.nextLine();
+        System.out.println("Ingrese el nombre del Jugador 2: ");
+        String jugador2 = scanner.nextLine();
 	}
 
 }

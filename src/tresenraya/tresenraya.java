@@ -78,6 +78,10 @@ public class tresenraya {
             // Marcar la casilla con el símbolo del jugador
             tablero[fila][columna] = turno;
             movimientos++;
+            
+            // Verificar si hay un ganador en filas, columnas o diagonales
+            ganador = false;
+
 
 
 	}

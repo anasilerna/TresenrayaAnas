@@ -69,6 +69,12 @@ public class tresenraya {
                 fila = 2;  // Fila 2
                 columna = casilla - 7;  // Columna 0, 1 o 2
             }
+         // Verificar si la casilla seleccionada ya está ocupada
+            if (tablero[fila][columna] != ' ') {
+                System.out.println("Casilla ocupada. Intenta de nuevo.");
+                continue; // Si la casilla está ocupada, se solicita de nuevo
+            }
+
 	}
 
 }

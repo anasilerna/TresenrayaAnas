@@ -45,6 +45,10 @@ public class tresenraya {
                 }
                 System.out.println(); // Salto de línea después de cada fila
             }
+            
+         // Solicitar al jugador que elija una casilla (1-9)
+            System.out.println("Turno de " + turnoJugador + " (" + turno + "). Elige una casilla (1-9): ");
+            int casilla = scanner.nextInt();
 	}
 
 }

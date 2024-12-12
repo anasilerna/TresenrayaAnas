@@ -106,10 +106,34 @@ public class tresenraya {
             if (tablero[0][2] == tablero[1][1] && tablero[1][1] == tablero[2][0] && tablero[0][2] != ' ') {
                 ganador = true; // Ganador en la diagonal secundaria
             }
-
-
-
-
-	}
-
+            
+            // Si hay un ganador, mostrar el tablero final y imprime al ganador
+            if (ganador) {
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        System.out.print(tablero[i][j] + " "); // Mostrar el tablero final
+                    }
+                    System.out.println();
+                }
+                System.out.println("¡Felicidades " + turnoJugador + " Has ganado");
+            } else if (movimientos == 9) { // Si ya se hicieron 9 movimientos y no hay ganador, es empate
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        System.out.print(tablero[i][j] + " "); // Mostrar el tablero final
+                    }
+                    System.out.println();
+                }
+                System.out.println("¡Es un empate!");
+            } else {
+                // Cambiar el turno al siguiente jugador
+                if (turnoJugador.equals(jugador1)) {
+                    turnoJugador = jugador2;
+                    turno = 'O';  // Cambiar turno a 'O'
+                } else {
+                    turnoJugador = jugador1;
+                    turno = 'X';  // Cambiar turno a 'X'
+                }
+            }
+        }
+    }
 }

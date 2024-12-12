@@ -34,6 +34,17 @@ public class tresenraya {
 
         boolean ganador = false; // Variable para verificar si ya hay un ganador
         int movimientos = 0; // Contador de movimientos 
+        
+        
+        // El ciclo sigue hasta que haya un ganador o el número de movimientos sea 9 (empate)
+        while (!ganador && movimientos < 9) {
+            // Mostrar el tablero
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    System.out.print(tablero[i][j] + " "); // Imprime cada casilla
+                }
+                System.out.println(); // Salto de línea después de cada fila
+            }
 	}
 
 }
